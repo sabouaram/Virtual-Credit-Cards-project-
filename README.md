@@ -2,12 +2,13 @@
 ![Virtual Credit Card](https://www.finance-monthly.com/Finance-Monthly/wp-content/uploads/2022/02/What-Is-A-Virtual-Credit-Card-And-How-Do-They-Work.jpg)
 
 ## Overview
+![CedarPay Logo](CedarPay.png)
 
-In a time when Lebanon is facing an economic crisis, the need for accessible and affordable online payment solutions is more crucial than ever. The "Virtual Credit Card Generator" project aims to address this need by providing a service that allows users in Lebanon to obtain virtual credit cards with ease and minimal fees.
+In a time when Lebanon is facing an economic crisis, the need for accessible and affordable online payment solutions is more crucial than ever. The "CedarPay" project aims to address this need by providing a service that allows users in Lebanon to obtain virtual credit cards with ease and minimal fees.
 
 ## How It Works
 
-The "Virtual Credit Card Generator" project streamlines the process of obtaining virtual credit cards for users in Lebanon, offering a straightforward and cost-effective solution during economic crises. Here's a step-by-step overview of how our system operates:
+The "CedarPay" project streamlines the process of obtaining virtual credit cards for users in Lebanon, offering a straightforward and cost-effective solution during economic crises. Here's a step-by-step overview of how our system operates:
 
 1. **User Registration**:
    - Users must first register for an account on our platform. During registration, they provide necessary personal information.
@@ -76,7 +77,7 @@ So, the user would need to pay approximately 106.83 USD to cover the cost of gen
 
 
 
-The backend of the "Virtual Credit Card Generator" will be developed in Golang as microservices that communicate via gRPC with the Frontend via envoy proxy,the traffic will be TLS encrypted from the front to the proxy. The backend microservices themselves can communicate with third-party APIs via HTTPS. The backend will be divided into the following microservices:
+The backend of the "CedarPay" will be developed in Golang as microservices that communicate via gRPC with the Frontend via envoy proxy,the traffic will be TLS encrypted from the front to the proxy. The backend microservices themselves can communicate with third-party APIs via HTTPS. The backend will be divided into the following microservices:
 
 - **Accounts Management Microservice**:
   - Responsible for user authentication, registration, password recovery, and account deletion.
