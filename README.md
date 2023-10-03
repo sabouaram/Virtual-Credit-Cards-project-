@@ -36,6 +36,40 @@ The "Virtual Credit Card Generator" project streamlines the process of obtaining
 8. **Low Fees and Accessibility**:
    - Our service is designed to be cost-effective, minimizing fees compared to traditional banking solutions.
    - It provides accessibility to online payment methods even in challenging economic conditions.
+   - 
+## Fee Calculation
+
+To calculate the fee that the user needs to pay when requesting a virtual credit card, we will use the actual exchange rate. As of the current date, the actual rates are:
+
+- 1 USD = 0.955197 EUR
+- 1 EUR = 1.046904461 USD
+
+Here's how the fee calculation works using these actual rates:
+
+1. **User Request**: The user enters the desired amount in dollars ($USD) that they want on the virtual credit card.
+
+2. **Fixed Fee**: Add the fixed fee of 2 euros (EUR) to the user's requested dollar amount.
+
+3. **Total Amount in Euros**: Calculate the equivalent amount in euros (EUR) for the user's total request, including the fixed fee.
+
+    Total in EUR = (User's Request in USD + 2 EUR) * 0.955197 EUR/USD
+
+4. **Total Amount in Dollars**: If needed, you can convert the total amount in euros back to dollars using the provided exchange rate of 1 EUR = 1.046904461 USD:
+
+    Total in USD = Total in EUR * 1.046904461 USD/EUR
+
+5. **Payment Request**: Present the user with the total amount they need to pay in dollars ($USD), including the fixed fee.
+
+For example, if the user wants to load 100 USD onto the virtual credit card:
+
+- Add the fixed fee: 100 USD + 2 EUR = 100 USD + 1.911394 EUR (2 EUR / 0.955197 EUR/USD) = 101.911394 EUR
+
+- If needed, convert the total back to dollars: 101.911394 EUR * 1.046904461 USD/EUR = 106.83 USD
+
+So, the user would need to pay approximately 106.83 USD to cover the cost of generating the virtual credit card with 100 USD worth of euros, including the fixed fee of 2 euros.
+
+Please ensure that your system always uses the most up-to-date exchange rates to provide users with accurate payment information.
+
 
 ## Backend Architecture
 
