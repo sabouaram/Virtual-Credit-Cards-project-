@@ -69,7 +69,6 @@ For example, if the user wants to load 100 USD onto the virtual credit card:
 
 So, the user would need to pay approximately 106.83 USD to cover the cost of generating the virtual credit card with 100 USD worth of euros, including the fixed fee of 2 euros.
 
-Please ensure that your system always uses the most up-to-date exchange rates to provide users with accurate payment information.
 
 
 ## Backend Architecture
