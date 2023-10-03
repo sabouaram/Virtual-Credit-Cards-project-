@@ -1,0 +1,85 @@
+# Virtual Credit Card Generator
+
+## Overview
+
+In a time when Lebanon is facing an economic crisis, the need for accessible and affordable online payment solutions is more crucial than ever. The "Virtual Credit Card Generator" project aims to address this need by providing a service that allows users in Lebanon to obtain virtual credit cards with ease and minimal fees.
+
+## How It Works
+
+The "Virtual Credit Card Generator" project streamlines the process of obtaining virtual credit cards for users in Lebanon, offering a straightforward and cost-effective solution during economic crises. Here's a step-by-step overview of how our system operates:
+
+1. **User Registration**:
+   - Users must first register for an account on our platform. During registration, they provide necessary personal information.
+
+2. **Wish Receipt Requirement**:
+   - To use the virtual credit card generation service, users are required to have a valid Wish money transfer receipt.
+   - This receipt serves as proof of funds and initiates the process.
+
+3. **Uploading Wish Receipt**:
+   - Once registered, users can log in to their accounts and upload their Wish money transfer receipts.
+   - Our system verifies the receipt's details, including the transferred amount.
+
+4. **Account Verification**:
+   - User accounts undergo verification to ensure compliance with security and legal standards.
+   - This verification step helps prevent misuse of our service.
+
+5. **Credit Card Generation**:
+   - Upon successful verification and validation of the Wish receipt, our system generates a virtual credit card with the corresponding amount.
+   - Users can specify the desired expiration date for the virtual credit card.
+
+6. **Email Confirmation**:
+   - Users receive an email confirmation with details of their newly generated virtual credit card.
+
+7. **Management Dashboard**:
+   - Users have access to a management dashboard where they can view their virtual credit cards, transaction history, and manage their account.
+
+8. **Low Fees and Accessibility**:
+   - Our service is designed to be cost-effective, minimizing fees compared to traditional banking solutions.
+   - It provides accessibility to online payment methods even in challenging economic conditions.
+
+## Backend Architecture
+
+The backend of the "Virtual Credit Card Generator" will be developed in Golang as microservices that communicate via gRPC APIs. It will be divided into the following microservices:
+
+- **Accounts Management Microservice**:
+  - Responsible for user authentication, registration, password recovery, and account deletion.
+
+- **Cards Management Microservice**:
+  - Communicates with a web France Fortuneo account in order to generate the virtual credit cards.
+
+- **Wish Management Microservice**:
+  - Processes the Wish transfers receipt and deposits the money into the Wish account.
+
+- **Emailing Microservice**:
+  - Handles email notifications and communication with users.
+
+Each microservice can have its own SQL database schema within a single PostgreSQL database for the platform, ensuring modularity and scalability.
+
+## Project Requirements
+
+To realize our project, we require the following technical components:
+
+1. **OVH Ubuntu Machine**:
+   - OVH virtual private server (VPS) or dedicated machine running Ubuntu.
+   - Public IP address and SSH access for remote administration.
+
+2. **Gandi Domain Name**:
+   - Domain name registered through Gandi or another registrar.
+   - DNS settings configured to point to the OVH server's public IP.
+
+3. **SSL Trusted Certificate**:
+   - SSL certificate obtained from a trusted certificate authority (CA).
+   - Installation and configuration on our OVH server for HTTPS.
+
+4. **Third-Party Email Service Provider**:
+   - Utilization of a third-party email service provider for reliable email communication.
+
+5. **Programming**:
+   - Backend development in Golang as microservices with gRPC communication.
+   - PostgreSQL database for the platform.
+
+By combining these technical components with the Wish receipt requirement, the "Virtual Credit Card Generator" project aims to offer an accessible, secure, and affordable financial solution for users in Lebanon, particularly during challenging economic times.
+
+
+
+
