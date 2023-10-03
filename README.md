@@ -77,7 +77,7 @@ Please ensure that your system always uses the most up-to-date exchange rates to
 
 
 
-The backend of the "Virtual Credit Card Generator" will be developed in Golang as microservices that communicate via gRPC with the Frontend via envoy proxy,the traffic will be TLS encrypted from the front to the proxy. It will be divided into the following microservices:
+The backend of the "Virtual Credit Card Generator" will be developed in Golang as microservices that communicate via gRPC with the Frontend via envoy proxy,the traffic will be TLS encrypted from the front to the proxy. The backend microservices themselves can communicate with third-party APIs via HTTPS. The backend will be divided into the following microservices:
 
 - **Accounts Management Microservice**:
   - Responsible for user authentication, registration, password recovery, and account deletion.
