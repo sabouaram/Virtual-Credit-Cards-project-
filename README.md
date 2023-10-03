@@ -74,6 +74,9 @@ Please ensure that your system always uses the most up-to-date exchange rates to
 
 ## Backend Architecture
 ![Architecture](diagram.png)
+
+
+
 The backend of the "Virtual Credit Card Generator" will be developed in Golang as microservices that communicate via gRPC APIs. It will be divided into the following microservices:
 
 - **Accounts Management Microservice**:
