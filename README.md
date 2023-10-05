@@ -13,12 +13,12 @@ The "CedarPay" project streamlines the process of obtaining virtual credit cards
 1. **User Registration**:
    - Users must first register for an account on our platform. During registration, they provide necessary personal information.
 
-2. **Wish Receipt Requirement**:
-   - To use the virtual credit card generation service, users are required to have a valid Wish money transfer receipt.
+2. **Whish Receipt Requirement**:
+   - To use the virtual credit card generation service, users are required to have a valid Whish money transfer receipt.
    - This receipt serves as proof of funds and initiates the process.
 
-3. **Uploading Wish Receipt**:
-   - Once registered, users can log in to their accounts and upload their Wish money transfer receipts.
+3. **Uploading Whish Receipt**:
+   - Once registered, users can log in to their accounts and upload their Whish money transfer receipts.
    - Our system verifies the receipt's details, including the transferred amount.
 
 4. **Account Verification**:
@@ -26,7 +26,7 @@ The "CedarPay" project streamlines the process of obtaining virtual credit cards
    - This verification step helps prevent misuse of our service.
 
 5. **Credit Card Generation**:
-   - Upon successful verification and validation of the Wish receipt, our system generates a virtual credit card with the corresponding amount.
+   - Upon successful verification and validation of the Whish receipt, our system generates a virtual credit card with the corresponding amount.
    - Users can specify the desired expiration date for the virtual credit card.
 
 6. **Email Confirmation**:
@@ -85,8 +85,8 @@ The backend of the "CedarPay" will be developed in Golang as microservices that 
 - **Cards Management Microservice**:
   - Communicates with a web France Fortuneo account in order to generate the virtual credit cards.
 
-- **Wish Management Microservice**:
-  - Processes the Wish transfers receipt and deposits the money into the Wish account.
+- **whish Management Microservice**:
+  - Processes the whish transfers receipt and deposits the money into the whish account.
 
 - **Emailing Microservice**:
   - Handles email notifications and communication with users.
@@ -116,7 +116,7 @@ To realize our project, we require the following technical components:
    - Backend development in Golang as microservices with gRPC communication.
    - PostgreSQL database for the platform.
 
-By combining these technical components with the Wish receipt requirement, the "Virtual Credit Card Generator" project aims to offer an accessible, secure, and affordable financial solution for users in Lebanon, particularly during challenging economic times.
+By combining these technical components with the whish receipt requirement, the "Virtual Credit Card Generator" project aims to offer an accessible, secure, and affordable financial solution for users in Lebanon, particularly during challenging economic times.
 
 
 
