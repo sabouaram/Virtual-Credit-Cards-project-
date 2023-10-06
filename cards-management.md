@@ -31,7 +31,7 @@ The CedarPay platform leverages the Fortuneo web account, owned by the platform 
 ### Payment Limits
 Virtual cards generated through the platform are subject to predefined spending limits. Transactions exceeding these limits will be directly rejected.
 ### Card Inactivation
-When a virtual card's balance reaches zero, it becomes inactive. Users will no longer be able to use the card for transactions until the balance is replenished.
+When a virtual card's balance reaches zero, it becomes inactive. Users will no longer be able to use the card.
 
 ## Tracking User Live Virtual Card Balances
 
