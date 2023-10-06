@@ -1,7 +1,7 @@
 # Cards Management Microservice
 
 This README provides an overview of the Cards Management Microservice in the CedarPay platform. This microservice is responsible for generating Fortuneo virtual credit cards for end-users in Lebanon. It outlines the process of card generation, validation of user requests, tracking live balances, and other related functionalities.
-Links: 1. https://www.fortuneo.fr/compte-bancaire/paiement-securise-internet
+1. https://www.fortuneo.fr/compte-bancaire/paiement-securise-internet
 2. https://whish.money/faq/ (Section 5 very important it describes the withdraw procedure)
 
 ![Virtual Credit Card](vcc.png)
