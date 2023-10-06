@@ -16,7 +16,7 @@ The CedarPay platform leverages the Fortuneo web account, owned by the platform 
 
 5. **Live Balance Tracking**: The microservice scrapes the account history to track each user's virtual card balances in real-time.
 
-6. **Response Time**: Please note that the user's response, including the issuance of virtual credit cards, can take between 2 to 5 hours. During this time, the user will be notified about the status of their request. If there is insufficient balance in the bank account, the user can withdraw their request before it is processed.
+6. **Response Time**: Please note that the user's response, including the issuance of virtual credit cards, can take between 2 to 5 hours. During this time, the user will be notified about the status of their request. This delay is to ensure we have the requested balance in the bank account.
 
 7. **Live Balance Tracking**: The microservice scrapes the account history to track each user's virtual card balances in real-time.
 
