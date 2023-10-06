@@ -2,7 +2,7 @@
 ![Virtual Credit Card](https://www.finance-monthly.com/Finance-Monthly/wp-content/uploads/2022/02/What-Is-A-Virtual-Credit-Card-And-How-Do-They-Work.jpg)
 
 ## Overview
-![CedarPay Logo](CedarPay.png)
+![CedarPay Logo](logo.png)
 
 In a time when Lebanon is facing an economic crisis, the need for accessible and affordable online payment solutions is more crucial than ever. The "CedarPay" project aims to address this need by providing a service that allows users in Lebanon to obtain virtual credit cards with ease and minimal fees.
 
