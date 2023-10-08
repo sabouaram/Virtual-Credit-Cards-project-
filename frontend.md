@@ -195,7 +195,7 @@ When building the repositories that implements these methods make sure you inclu
 | getBalance(BalanceRequest)             | Get user balance                             | Yes                |
 | getPaymentHistory(PaymentHistoryRequest) | Get payment history                        | Yes                |
 | UploadFile(FileUploadRequest)          | Upload a file                                | Yes                |
-  SendEmail(EmailRequest)                | Send an email                                | No                 |
+|  SendEmail(EmailRequest)               | Send an email                                | No                 |
 ```
 
 ```proto
