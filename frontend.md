@@ -195,7 +195,7 @@ When building the repositories that implements these methods make sure you inclu
 | getBalance(BalanceRequest)             | Get user balance                             | Yes                |
 | getPaymentHistory(PaymentHistoryRequest) | Get payment history                        | Yes                |
 | UploadFile(FileUploadRequest)          | Upload a file                                | Yes                |
-
+  SendEmail(EmailRequest)                | Send an email                                | No                 |
 ```
 
 ```proto
@@ -211,6 +211,7 @@ rpc getVirtualCard(VirtualCardRequest) returns (VirtualCardResponse) {}
 rpc getBalance(BalanceRequest) returns (BalanceResponse) {}
 rpc getPaymentHistory(PaymentHistoryRequest) returns (PaymentHistoryResponse){}
 rpc UploadFile(FileUploadRequest) returns (FileUploadResponse) {}
+rpc SendEmail(EmailRequest) returns (EmailResponse) {}
 }
 
 message AuthLoginRequest {
@@ -291,4 +292,14 @@ message FileUploadResponse {
   bool result = 1;
 }
 
+message EmailRequest {
+  string from = 1;
+  string to = 2;
+  string subject = 3;
+  string message = 4;
+}
+
+message EmailResponse {
+  bool result = 1 ;
+}
 ```
