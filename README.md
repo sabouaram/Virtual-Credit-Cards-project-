@@ -87,17 +87,17 @@ So, the user would need to pay approximately 106.83 USD to cover the cost of gen
 --                                                |
 --                                                |
 --                                                |
---                                                |
+--                                                |     gRPC-WEB + TLS
 --                                                |
 --                                                |
 --                                                |
 --                                                |
 --                                         +------+-------+
 --                                         |              |
---                                         | Envoy Proxy  |
+--                                         | Envoy Proxy  | =====> gRPC-WEB TO gRPC && gRPC to gRPC-WEB <=======
 --                                         |              |
 --                                         +------+-------+
---                                                |
+--                                                |  gRPC
 --                                                |
 --                                        +-------+--------+
 --                                        |                |
@@ -108,15 +108,15 @@ So, the user would need to pay approximately 106.83 USD to cover the cost of gen
 --                                        |Gateway microsrv|
 -- +-----------------+                    |                |
 -- |                 |                    ++----+------+---+                               +-----------------+
--- |                 |                     |    |      |   |                               |                 |
+-- |                 |     gRPC            |    |      |   |          gRPC                 |                 |
 -- |     Accounts    |                     |    |      |   |                               |   Cards         |
 -- |     Management  |                     |    |      |   +-------------------------------+   Management    |
 -- |                 +---------------------+    |      |                                   |                 |
 -- |                 |                          |      |                                   +-----------------+
--- +-----------------+                          |      |
+-- +-----------------+          gRPC            |      |
 --                                              |      |
 --                                              |      |
---                        +----------------+    |      |
+--                        +----------------+    |      |     gRPC
 --                        |                |    |      |
 --                        |    Emailing    |    |      |
 --                        |                +----+      |
