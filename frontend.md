@@ -184,6 +184,20 @@ class SilvermobiGRPCServiceImpl implements SilvermobiGRPCService {
 ```
 ## The API proto files:
 When building the repositories that implements these methods make sure you include the JWT in the header if the method requires it.
+```
+| RPC Method                            | Description                                  | Requires JWT Token |
+| ------------------------------------- | -------------------------------------------- | ------------------ |
+| AuthLogin(AuthLoginRequest)            | Authenticate user                            | No                 |
+| AuthRegister(AuthRegisterRequest)      | Register a new user                          | No                 |
+| ForgetAccount(ForgetAccountRequest)    | Request to reset account                     | No                 |
+| UpdatePassword(UpdatePasswordRequest)  | Update user password                         | No                 |
+| getVirtualCard(VirtualCardRequest)     | Get a virtual card                           | Yes                |
+| getBalance(BalanceRequest)             | Get user balance                             | Yes                |
+| getPaymentHistory(PaymentHistoryRequest) | Get payment history                        | Yes                |
+| UploadFile(FileUploadRequest)          | Upload a file                                | Yes                |
+
+```
+
 ```proto
 syntax = "proto3";
 
