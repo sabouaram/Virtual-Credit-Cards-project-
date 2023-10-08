@@ -2,7 +2,7 @@
 
 
 ## Project Structure
-
+The webapp should be responsive meaning it have to work correctly on all the available devices browsers.
 Our project follows the Cubits -> Repositories -> Main Design Pattern for state management. It also uses the MultiblocRepositories and MultiblocProviders pattern for efficient state management.
 
 - `lib/`
