@@ -19,7 +19,7 @@ We use the GoRouter package for URL navigation. Make sure to familiarize yoursel
 All unexpected errors should return the current URL.
 
 ## Token Management
-For token management, we use `flutter_secure_storage` for mobile apps. Tokens should be securely stored on the user's device. For web applications, tokens should be managed accordingly. To identify how to store the JWT.
+For token management, we use `flutter_secure_storage` for mobile apps. Tokens should be securely stored on the user's device. For web applications, tokens should be managed accordingly. `To identify how to store the JWT: Mainly looking for a good and secure solution`.
 
 We have provided a JwtTokenManager class as an example for token management. Please adapt it as needed for your specific requirements.
 
