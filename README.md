@@ -95,9 +95,10 @@ So, the user would need to pay approximately 106.83 USD to cover the cost of gen
   |       |       |     | 
   |       |       |     |    gRPC
   v       v       v     v 
-+-------+-------+   +-------------------+   +-------------------+
-| Accounts &     |   |   Cards           |   |   Emailing        |
-| Management     |   |   Management      |   |                   |
++-------+-------+   +-------------------+   +-------------------+    +-------------------+
+| Accounts &     |   |   Cards           |   |   Emailing        |   |     Money Tranfer  |
+| Management     |   |   Management      |   |                   |   |                    |
+------------------    --------------------   ---------------------   -----------------------
 ```
 
 
