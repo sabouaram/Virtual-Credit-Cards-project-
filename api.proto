@@ -1,0 +1,103 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto"; 
+service CedarPayGRPC {
+rpc AuthLogin(AuthLoginRequest) returns (AuthLoginResponse) {}
+rpc AuthRegister(AuthRegisterRequest) returns (AuthRegisterResponse) {}
+rpc ForgetAccount(ForgetAccountRequest) returns (ForgetAccountResponse) {}
+rpc UpdatePassword(UpdatePasswordRequest) returns (UpdatePasswordResponse) {}
+rpc getVirtualCard(VirtualCardRequest) returns (VirtualCardResponse) {}
+rpc getBalance(BalanceRequest) returns (BalanceResponse) {}
+rpc getPaymentHistory(PaymentHistoryRequest) returns (PaymentHistoryResponse){}
+rpc UploadFile(FileUploadRequest) returns (FileUploadResponse) {}
+rpc SendEmail(EmailRequest) returns (EmailResponse) {}
+}
+
+message AuthLoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message AuthLoginResponse {
+  string token = 1;
+}
+
+message AuthRegisterRequest {
+  string email = 1;
+  string password = 2;
+  string first_name = 3;
+  string last_name = 4;
+  string phone_number = 5;
+}
+
+message AuthRegisterResponse {
+  string token = 1;
+}
+
+message ForgetAccountRequest {
+  string username = 1;
+}
+
+message ForgetAccountResponse {
+  bool response = 1;
+  string access_code = 2;
+}
+
+message UpdatePasswordRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message UpdatePasswordResponse {
+  bool response = 1;
+}
+
+message VirtualCardRequest {
+  int64 amount = 1;
+  int64 month = 2;
+  int64 year = 3;
+}
+
+message VirtualCardResponse {
+  int64 cardnumber = 1;
+  int64 cvc = 2;
+}
+
+message BalanceRequest {}
+
+message BalanceResponse {
+  float balance = 1;
+}
+
+message PaymentHistoryRequest {}
+
+message PaymentOperation {
+  string merchantName = 1;
+  float amount = 2;
+  google.protobuf.Timestamp date = 3;
+}
+
+message PaymentHistoryResponse {
+  repeated PaymentOperation operations = 1;
+}
+
+message FileUploadRequest {
+  string filename = 1;
+  string type = 2;
+  bytes file_content = 3;
+}
+
+message FileUploadResponse {
+  bool result = 1;
+}
+
+message EmailRequest {
+  string from = 1;
+  string to = 2;
+  string subject = 3;
+  string message = 4;
+}
+
+message EmailResponse {
+  bool result = 1 ;
+}
